@@ -1,0 +1,26 @@
+{
+  "name": "apiarchivos",
+  "version": "1.0.0",
+  "description": "generara una serie de archivos que cumplirán el funcionamiento de una base de datos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-luis996/APIarchivos.git"
+  },
+  "author": "Jorge Luis Martinez Hernandez <s_k_ap3@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/j-luis996/APIarchivos/issues"
+  },
+  "homepage": "https://github.com/j-luis996/APIarchivos#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
