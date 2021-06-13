@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }))
 ///////////////////aqui van las rutas
 router(app)
 ///////////////////
-app.listen(8080,() => {
+app.listen(3000,() => {
     console.log(`Escuchando en http://localhost:8080`)
 })
 
