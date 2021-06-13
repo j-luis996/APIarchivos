@@ -1,3 +1,5 @@
 id  nombre  precio  descripcion    stock   categorias
 kUZtlE1m6TlnngDoBACiJ   pluma   10.5    esunapluma    8   cat1
 kUZtlE1m6TlnngDoBAiJ   pluma2   11.5    esunaplwfefuma    9   cat9
+id_prueba   lapiz   10.5   descripciondeprueba   8   categoriadeprueba
+id_prueba   lapiz   10.5   descripciondeprueba   8   categoriadeprueba

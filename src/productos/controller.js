@@ -18,13 +18,44 @@ function readOne(req,res){
     for(let i in data_json){
         
         if(data_json[i].id==req.params.id){
-            console.log(data_json[i])
             response.success(req,res,data_json[i],200)
+            return 1
         }
     }
     
+    response.error(req,res,"algo salio mal",500)
 }
+function insert(req,res){
+    const data = req.body
+    data_final = []
+    
+    let data_string = JSON.stringify(data)
+    data_string = data_string.replace("{","")
+    data_string = data_string.replace("}","")
+    data_string = data_string.replace(/['"]+/g, '')
+    data_string = data_string.replace(/[',]+/g, ' ')
+    data_string = data_string.split(' ')
+    
+    for(let i in data_string){
+        data_final.push(data_string[i].split(':'))
+    }
+    data_string =[] 
+    for(let i in data_final){
+        for(j in data_final[i]){
+            if(j%2!=0){
+                data_string.push(data_final[i][j])
+            }
+        }
+    }
+    data_string = data_string.toString()
+    data_string = data_string.replace(/[',]+/g, '   ')
 
+    let archivo = fs.readFileSync(`${__dirname}/tabla.txt`,{encoding:"ascii"})
+    fs.writeFileSync(`${__dirname}/tabla.txt`,`${archivo}
+${data_string}`)
+    response.success(req, res, "okay", 200)
+
+}
 function convertir_cadena(data){
     data_json=[]
     let data_separada = []
@@ -37,7 +68,6 @@ function convertir_cadena(data){
         data_clean.push(data_separada[i].filter(Boolean))
     }
     
-
     data_clean.reduce((acumulador,actual,indice, array )=>{
         let cadena = ""
         for(let i in acumulador){
@@ -62,4 +92,5 @@ function convertir_cadena(data){
 module.exports = {
     readAll,
     readOne,
+    insert,
 }
