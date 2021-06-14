@@ -8,8 +8,8 @@ app.use(express.urlencoded({ extended: true }))
 ///////////////////aqui van las rutas
 router(app)
 ///////////////////
-app.listen(3003,() => {
-    console.log(`Escuchando en http://localhost:3003`)
+app.listen(3004,() => {
+    console.log(`Escuchando en http://localhost:3004`)
 })
 
 //capura promesas no capturadas
