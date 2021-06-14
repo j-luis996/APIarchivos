@@ -1,0 +1,2 @@
+id    nombre    a_paterno    a_materno    id_puesto    id_usuario  
+idprueba    luis    martinez    hernandez    eghe2587ejenee    rnkekr4154rerr
