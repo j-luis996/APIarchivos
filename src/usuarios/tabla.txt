@@ -1,0 +1,2 @@
+id    nickname    password    last_conection    token    imagen    
+idprueba    luis    oiuytrew    25/02/2021    gkjerbbkr34r34    ./carpeta/img.png
