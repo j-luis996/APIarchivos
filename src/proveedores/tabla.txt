@@ -1,0 +1,2 @@
+id    nombre    comentario    tel_contacto1    tel_contacto2    email    RFC
+kUZtlE1m6TlnngDoBACiJ    luis    prevedor_cereales    5555555555    6666666666    pedrito@pedrito.com    jdjfrfrgrfr
